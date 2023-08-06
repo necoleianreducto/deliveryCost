@@ -7,4 +7,5 @@ public class RuleCost {
     private String rule;
     private String condition;
     private String cost;
+    private boolean isExpiredVoucher;
 }
