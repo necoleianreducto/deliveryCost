@@ -18,8 +18,9 @@ public class CalculateDeliveryController {
     @Autowired
     DeliveryCostService deliveryCostService;
 
-    @RequestMapping(value = "delivery", method = RequestMethod.POST)
+    @RequestMapping(value = "delivery", method = RequestMethod.GET)
     public RuleCost calculateDeliveryCost(@RequestBody ParcelDetails parcelDetails) {
+
         return deliveryCostService.calculateDeliveryCost(parcelDetails);
     }
 }

@@ -17,16 +17,17 @@ public class VoucherService {
     private RestTemplate restTemplate;
 
     public VoucherItem getVoucherDiscount(String voucherCode) {
-        String apiUrl = BASE_URL + "/voucher/{voucherCode}";
-
-        apiUrl += "?key=" + API_KEY;
-        log.info("API URL: " + apiUrl);
-        ResponseEntity<VoucherItem> response = restTemplate.getForEntity(apiUrl, VoucherItem.class, voucherCode);
-
-        if (response.getStatusCode().is2xxSuccessful()) {
-            return response.getBody();
-        } else {
-            return null;
-        }
+//        String apiUrl = BASE_URL + "/voucher/{voucherCode}";
+//
+//        apiUrl += "?key=" + API_KEY;
+//        log.info("API URL: " + apiUrl);
+//        ResponseEntity<VoucherItem> response = restTemplate.getForEntity(apiUrl, VoucherItem.class, voucherCode);
+//
+//        if (response.getStatusCode().is2xxSuccessful()) {
+//            return response.getBody();
+//        } else {
+//            return null;
+//        }
+        return null;
     }
 }
